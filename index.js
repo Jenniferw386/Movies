@@ -19,6 +19,7 @@
 
   async function getMovies() {
     const searchInput = document.getElementById('searchInput').value.trim();
+     const spinner = document.getElementById('spinner');
     const query = encodeURIComponent(searchInput);
 
     const response = await fetch(`http://www.omdbapi.com/?apikey=de02f260&s=${query}`);
