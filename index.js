@@ -22,7 +22,7 @@
      const spinner = document.getElementById('spinner');
     const query = encodeURIComponent(searchInput);
 
-    const response = await fetch(`http://www.omdbapi.com/?apikey=de02f260&s=${query}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=de02f260&s=${query}`);
     const moviesData = await response.json();
 
     const moviesList = document.querySelector(".movies");
