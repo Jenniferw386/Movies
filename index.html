@@ -6,8 +6,10 @@
     <title>Document</title>
      <link rel="stylesheet" href="styles.css">
        <script src="index.js" defer></script>
+</head>
      <div class="container">
      <img src="./assets/pop.jpg" class="pop">
+     </div>
      <nav>
         <img src="./assets/images-removebg-preview (1).png" class="logo">
          <ul>
@@ -15,10 +17,15 @@
              <li><a class="nav__link" href="#">Movies</a></li>
              <li><a class="nav__link" href="#">Contact</a></li>
             </ul>
-            </nav>
-     </div>
-     <div class="background__trans">
-     <div class="input__box">
+    </nav>
+  
+    <div class="input__box">
+    <select class="filter" onchange="filterMovies(event)">
+            <option value="" disabled selected>Sort </option>
+            <option value="NEW_TO_OLD">Age, New to Old</option>
+            <option value="OLD_TO_NEW">Age, Old to New</option>
+           
+          </select>
 <input type="search" placeholder="Search by Title" id="searchInput">
 <input type="submit"  onclick="" class="button" id="searchButton">
      </div>
