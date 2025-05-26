@@ -20,8 +20,8 @@
     </nav>
   
     <div class="input__box">
-    <select class="filter" onchange="filterMovies(event)">
-            <option value="" disabled selected>Sort </option>
+    <select id="filter" >
+            <option value="">Sort </option>
             <option value="NEW_TO_OLD">Age, New to Old</option>
             <option value="OLD_TO_NEW">Age, Old to New</option>
            
@@ -33,6 +33,7 @@
 </div>
 </div>
 </head>
+<div id="spinner" style="display:none;">Loading...</div>
 <body>
     <script src="index.js"></script>
 </body>
